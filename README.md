@@ -33,6 +33,13 @@ Composed by a Grafana and a MySQL or MariaDB database server. The database just 
     1. clone the repo
     2. cd wardriver && python3 1-wardriver.py
 
+## Documentation: 
+
+For now you can check this two articles: 
+
+- **DIY Wardriving - Building your exploration arsenal PART 1:** https://medium.com/@keyboardsamurai007/diy-wardriving-building-your-wireless-exploration-arsenal-part-1-d43cbe540f1d
+- **DIY Wardriving - Building your exploration arsenal PART 2:** https://medium.com/@keyboardsamurai007/diy-wardriving-building-your-wireless-exploration-arsenal-part-2-b21a89b407b1
+
 
 ## Compatibility
 
