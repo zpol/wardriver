@@ -6,6 +6,7 @@ This frameowrk is just a quick way to automate some of the most boring manual co
 
 
 ![Wardriver2](doc/img/wardriver.png)
+![Wardriver2](doc/img/raspi.webp)
 
 
 ## Parts breakdown
