@@ -2,7 +2,7 @@
 
 ## A Wardriving framework to capture & visualize the data
 
-This frameowrk is just a quick way to automate some of the most boring manual commands to type in a terminal when it comes to wireless security scanning or just wardriving for fun and learning. The aim is to automate as much as possible the information gathering sequence + the data transfer + the data ingestion and further render / representation into a dashboard for investigation purposes. 
+This little framework is just a quick way to automate some of the most boring manual commands to type in a terminal when it comes to wireless security scanning or just wardriving for fun and learning. The aim is to automate as much as possible the information gathering sequence + the data transfer + the data ingestion and further render / representation into a dashboard for investigation purposes. 
 
 
 ![Wardriver2](doc/img/wardriver.png)
