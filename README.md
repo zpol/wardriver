@@ -2,7 +2,10 @@
 
 ## A Wardriving framework to capture & visualize the data
 
-This little framework is just a quick way to automate some of the most boring manual commands to type in a terminal when it comes to wireless security scanning or just wardriving for fun and learning. The aim is to automate as much as possible the information gathering sequence + the data transfer + the data ingestion and further render / representation into a dashboard. 
+This little framework is just a quick way to automate some of the most boring manual commands to type in a terminal when it comes to wireless security scanning or just wardriving for fun and learning. The aim is to automate as much as possible the information gathering sequence + the data transfer + the data ingestion and further render / representation into a dashboard in Grafana. 
+
+To run this software you can use any Linux OS with a compatible wireless device and a compatible GPS module.
+But I highly recomend do it in something small that you can carry or attach to with just some tape. In this case everything runs on a portable device (Raspberry Pi 4) powered by a battery.
 
 
 ![Wardriver2](doc/img/wardriver.png)
