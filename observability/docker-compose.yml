@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=changeme
+    user: "root" 
+    restart: always
+
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=toor
+      - MYSQL_DATABASE=geoip
+      - MYSQL_USER=geoip
+      - MYSQL_PASSWORD=password
+    volumes:
+      - ./mariadb:/var/lib/mysql
+    restart: always

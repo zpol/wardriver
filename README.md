@@ -2,11 +2,12 @@
 
 ## A Wardriving framework to capture & visualize the data
 
-This little framework is just a quick way to automate some of the most boring manual commands to type in a terminal when it comes to wireless security scanning or just wardriving for fun and learning. The aim is to automate as much as possible the information gathering sequence + the data transfer + the data ingestion and further render / representation into a dashboard for investigation purposes. 
+This little framework is just a quick way to automate some of the most boring manual commands to type in a terminal when it comes to wireless security scanning or just wardriving for fun and learning. The aim is to automate as much as possible the information gathering sequence + the data transfer + the data ingestion and further render / representation into a dashboard. 
 
 
 ![Wardriver2](doc/img/wardriver.png)
 ![Wardriver2](doc/img/raspi.webp)
+![Wardriver2](doc/img/observability.png)
 
 
 ## Parts breakdown
@@ -41,6 +42,37 @@ For now you can check this two articles:
 - **DIY Wardriving - Building your exploration arsenal PART 1:** https://medium.com/@keyboardsamurai007/diy-wardriving-building-your-wireless-exploration-arsenal-part-1-d43cbe540f1d
 - **DIY Wardriving - Building your exploration arsenal PART 2:** https://medium.com/@keyboardsamurai007/diy-wardriving-building-your-wireless-exploration-arsenal-part-2-b21a89b407b1
 
+## Database schema
+Everything is created automatically but for you to know the following fields compose the database structure:
+
+
+```
+arad@wifiburner> mysql -ugeoip -ppassword -h 127.0.0.1  geoip -e "desc wifi_networks;" 
+
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra          |
++-----------------+--------------+------+-----+---------+----------------+
+| id              | int(11)      | NO   | PRI | NULL    | auto_increment |
+| BSSID           | varchar(255) | YES  |     | NULL    |                |
+| first_time_seen | datetime     | YES  |     | NULL    |                |
+| last_time_seen  | datetime     | YES  |     | NULL    |                |
+| channel         | int(11)      | YES  |     | NULL    |                |
+| speed           | int(11)      | YES  |     | NULL    |                |
+| privacy         | varchar(255) | YES  |     | NULL    |                |
+| cipher          | varchar(255) | YES  |     | NULL    |                |
+| authentication  | varchar(255) | YES  |     | NULL    |                |
+| power           | int(11)      | YES  |     | NULL    |                |
+| beacons         | int(11)      | YES  |     | NULL    |                |
+| iv              | int(11)      | YES  |     | NULL    |                |
+| lan_ip          | varchar(255) | YES  |     | NULL    |                |
+| id_length       | int(11)      | YES  |     | NULL    |                |
+| essid           | varchar(255) | YES  |     | NULL    |                |
+| wifi_key        | varchar(255) | YES  |     | NULL    |                |
+| latitude        | double       | YES  |     | NULL    |                |
+| longitude       | double       | YES  |     | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+
+```
 
 ## Compatibility
 
