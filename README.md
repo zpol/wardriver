@@ -44,6 +44,8 @@ For now you can check this two articles:
 
 - **DIY Wardriving - Building your exploration arsenal PART 1:** https://medium.com/@keyboardsamurai007/diy-wardriving-building-your-wireless-exploration-arsenal-part-1-d43cbe540f1d
 - **DIY Wardriving - Building your exploration arsenal PART 2:** https://medium.com/@keyboardsamurai007/diy-wardriving-building-your-wireless-exploration-arsenal-part-2-b21a89b407b1
+- **DIY Wardriving - Building your exploration arsenal PART 3:** https://medium.com/@keyboardsamurai007/diy-wardriving-building-your-exploration-arsenal-part-3-fb9c2251f7cd
+
 
 ## Database schema
 Everything is created automatically but for you to know the following fields compose the database structure:

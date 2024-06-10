@@ -66,8 +66,8 @@ def process_json_files(data_input_folder, connection):
                     print(f">> Error processing data: '{e}'")
 
 def add_randomness_to_coordinates(lat, lon, delta_meters=20):
-    delta_lat = delta_meters / 111000  # Grados por metro en latitud
-    delta_lon = delta_meters / (111000 * math.cos(math.radians(lat)))  # Grados por metro en longitud
+    delta_lat = delta_meters / 111000  # Degrees per meter lat
+    delta_lon = delta_meters / (111000 * math.cos(math.radians(lat)))  # degrees per meter lon
 
     random_lat = lat + random.uniform(-delta_lat, delta_lat)
     random_lon = lon + random.uniform(-delta_lon, delta_lon)
